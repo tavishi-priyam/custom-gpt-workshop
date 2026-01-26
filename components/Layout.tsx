@@ -26,11 +26,10 @@ export const Layout: React.FC<LayoutProps> = ({ children, activePage, onNavigate
               onClick={() => onNavigate('home')}
             >
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-blue-600 flex items-center justify-center neon-glow transform transition-transform group-hover:scale-105 group-hover:rotate-3">
-                <span className="text-white font-black text-xl">G</span>
+                <span className="text-white font-black text-xl">RF</span>
               </div>
               <div className="flex flex-col">
-                <span className="font-bold text-lg tracking-tight leading-none">Workshop<span className="text-purple-500">.ai</span></span>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold">GPT Builder Series</span>
+                <span className="font-bold text-lg tracking-tight leading-none">Custom GPT Workshop</span>
               </div>
             </div>
             
