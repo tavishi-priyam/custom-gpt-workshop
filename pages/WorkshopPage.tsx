@@ -161,14 +161,14 @@ export const WorkshopPage: React.FC<WorkshopPageProps> = ({ type, showToast }) =
                 <a
                   href={
                     type === 'copywriter'
-                      ? '/sample-copywriter-knowledge.md'
+                      ? '/sample-copywriter-knowledge.pdf'
                       : type === 'reporter'
-                      ? '/sample-reporter-knowledge.md'
-                      : '/sample-client-knowledge.md'
+                      ? '/sample-reporter-knowledge.pdf'
+                      : '/sample-client-knowledge.pdf'
                   }
                   download
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium shadow"
-                  title="Download sample knowledge base"
+                  title="Download sample knowledge base (PDF)"
                 >
                   Download Sample knowledge Base
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -176,7 +176,6 @@ export const WorkshopPage: React.FC<WorkshopPageProps> = ({ type, showToast }) =
                   </svg>
                 </a>
             
-                {/* optional: small explain text */}
                 <div className="text-slate-400 text-sm max-w-xs">
                   Sample knowledge base: upload this to the GPT “Knowledge” section.
                 </div>
