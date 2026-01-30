@@ -12,7 +12,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
       id: 'copywriter',
       title: 'Personal Copywriter',
       tag: 'Writing',
-      desc: 'Create an AI that writes exactly like you. Perfect for emails, blogs, social posts, and more.',
+      desc: 'Create an AI copywriter that writes exactly like you. Perfect for emails, blogs, social posts, press releases and more.',
       icon: '✍️',
       accent: 'bg-purple-500'
     },
@@ -20,7 +20,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
       id: 'reporter',
       title: 'Reporter',
       tag: 'Strategy',
-      desc: 'Get help drafting pitches and testing your ideas against a "tough" reporter persona.',
+      desc: 'Get help testing pitches and ideas against a "tough" reporter persona.',
       icon: '🎙️',
       accent: 'bg-blue-500'
     },
@@ -28,7 +28,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
       id: 'client',
       title: 'Client',
       tag: 'Support',
-      desc: 'An AI that knows your brand inside out to help with client message testing.',
+      desc: 'A GPT that understands your client’s brand so you can test ideas and write with confidence.',
       icon: '🤝',
       accent: 'bg-emerald-500'
     },
