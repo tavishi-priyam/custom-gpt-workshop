@@ -152,18 +152,36 @@ export const WorkshopPage: React.FC<WorkshopPageProps> = ({ type, showToast }) =
               </p>
             </div>
             
-            <div className="flex flex-col items-end gap-2">
-              <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">Progress</span>
-              <div className="flex items-center gap-4">
-                <div className="w-32 h-1.5 bg-slate-800 rounded-full overflow-hidden">
-                  <div 
-                    className="h-full bg-purple-500 transition-all duration-700 ease-out" 
-                    style={{ width: `${progressPercent}%` }}
-                  />
+            {/* Download sample knowledge base */}
+            <div className="flex flex-col items-end gap-3">
+              <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">Sample Knowledge</span>
+            
+              {/* Choose file URL by page type */}
+              <div className="flex gap-3 items-center">
+                <a
+                  href={
+                    type === 'copywriter'
+                      ? '/sample-copywriter-knowledge.md'
+                      : type === 'reporter'
+                      ? '/sample-reporter-knowledge.md'
+                      : '/sample-client-knowledge.md'
+                  }
+                  download
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium shadow"
+                  title="Download sample knowledge base"
+                >
+                  Download Sample knowledge Base
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v12m0 0l4-4m-4 4-4-4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7" />
+                  </svg>
+                </a>
+            
+                {/* optional: small explain text */}
+                <div className="text-slate-400 text-sm max-w-xs">
+                  Sample knowledge base: upload this to the GPT “Knowledge” section.
                 </div>
-                <span className="text-xs font-mono font-bold text-white">{copiedCount}/{totalBlocks}</span>
               </div>
-            </div>
+            </div>  
           </div>
         </div>
       </section>
